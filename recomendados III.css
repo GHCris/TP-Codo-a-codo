@@ -1,6 +1,6 @@
 html {font-family: 'Playfair Display', serif;}
 
-body {background-color:#FAFBFD; /* #F3E5AB; linear-gradient(to bottom, #DBBC94, #c7c5c5)*/ margin: 0;}
+body {background-color:#FAFBFD;}
  
 header {background-color: #24272a; 
   height: 80px; 
@@ -59,36 +59,46 @@ header {background-color: #24272a;
     line-height: 60px;
     cursor: pointer;
     font-family: 'ABeeZee', sans-serif;
-  
     display: none;
   } 
       
 footer {background-color: #24272a;} /*height: 15vh;*/
 
-.container-general {display: flex;
-    justify-content: center; 
-    flex-wrap: wrap; margin-right: 50px;}
+.subtítulo a {text-decoration: none;}
+
+.container-general {
+  background: #f5b041;
+  background: linear-gradient(180deg,#f5b041 0%, #f8c471 40%);
+  background: -webkit-linear-gradient(180deg,#f5b041 0%, #f8c471 40%);
+  background: -moz-linear-gradient(180deg,#f5b041 0%, #f8c471 40%);
+  display: flex;
+  justify-content: center; 
+  flex-wrap: wrap; 
+  margin-right: 50px;
+  margin-left: 50px ;}
 
 
-.grid-container {display: inline-grid; 
-            grid-template-columns: auto;
-            background:linear-gradient(to bottom, rgb(219, 188, 148));
-            padding: 20px;
-            border: 2px solid #6d4c41 ;
-            margin: 20px;
-            grid-gap: 30px;
-            width: 300px;}
+.grid-container {
+  display: inline-grid; 
+  grid-template-columns: auto;          
+  background-color: #fdfefe  ;
+  padding: 20px;
+  border: 2px solid #6d4c41 ;
+  margin: 20px;
+  grid-gap: 30px;
+  width: 300px;}
     
 .grid-item {text-align: center;}
      
-.grid-item-foto {position: center;  
-                 padding: 8px; 
-                 margin: 10px; 
-                 border: 1.5px solid black; 
-                 width: 250px; 
-                 height: 167px;
-                 overflow: hidden;
-                 border-image: fill;}
+.grid-item-foto {
+  position: center;  
+  padding: 8px; 
+  margin: 10px; 
+  border: 1.5px solid black; 
+  width: 250px; 
+  height: 167px;
+  overflow: hidden;
+  border-image: fill;}
                                                          
                  
 .grid-item-foto:hover {-webkit-transform: rotateY(180deg);
@@ -228,4 +238,6 @@ p {font-size: 18px;
 
 }
 
-
+@media (max-width: 768px) 
+{ .pie-pagina .grupo1 { width: 90%; grid-template-columns: repeat(1, 1fr); 
+  grid-gap: 30px; padding: 35px, 0px; } }
