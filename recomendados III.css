@@ -177,11 +177,17 @@ p {font-size: 18px;
   line-height: 45px;
   color: #D8D8D8;
   margin-right: 10px;
+  margin-left: 12px ; 
   background-color: #0d2033;
   text-align: center;
   transition: all 3s ease;
-
 }
+
+.pie-pagina .grupo1 .redsocial {
+  justify-content: center;
+   margin-left: 50px;
+ }
+
 @media (max-width: 768px) {
   body {
     padding-top: 70px;
